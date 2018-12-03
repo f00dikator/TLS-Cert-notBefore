@@ -72,6 +72,8 @@ func main() {
 					retval := handle_appdata(appdata)
 					if (retval != 0) {
 						fmt.Printf("%s -> %s\n\n", ip.SrcIP, ip.DstIP)
+						// if you want to write out the full packet, uncomment the line below
+						// fmt.Printf("%s", packet.Dump())
 					}
 				}
  			}
